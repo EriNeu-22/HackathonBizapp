@@ -1,0 +1,6 @@
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\HackathonV2_ARBOR_TECH.dll
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\HackathonV2_ARBOR_TECH.pdb
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.csproj.AssemblyReference.cache
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.csproj.CoreCompileInputs.cache
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.dll
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.pdb
