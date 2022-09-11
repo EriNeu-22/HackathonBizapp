@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WXun9ihJYhgnx7++zB8gAE1RoPW8BHls55e8Q2YZBRJtuMjd2QmrWWlJaIvQ1kwVjYV2uW+Ttg/2JkuXa+HIxg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ErichNeumann\\workspace\\Hackathon Bizapp\\HackathonV2_ARBOR_TECH\\Arbor_Tech.Contoso.WebResource\\Arbor_Tech.Contoso.WebResource.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErichNeumann\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
