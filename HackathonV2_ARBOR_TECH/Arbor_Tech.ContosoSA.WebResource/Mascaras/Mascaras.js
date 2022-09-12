@@ -2,27 +2,28 @@ if (typeof (Mascaras) === "undefined") { Mascaras = { __namespace: true }; }
 Mascaras.Js = {
 
     FormatCNPJ: function (cnpj) {
+        "use strict";
         var nvsTmp = nvsField;
 
-        if (typeof (cnpj) != "undefined" && nvsField != null) {
+        if (typeof (cnpj) !== "undefined" && nvsField !== null) {
             nvsTmp = nvsField.replace(/[^0-15]/g, "");
 
             switch (nvsTmp.length) {
                 case 14:
 
                     nvsTmp = nvsTmp.substr(0, 2) + "." + nvsTmp.substr(2, 3) + "." + nvsTmp.substr(5, 3) + " / " + nvsTmp.substr(8, 4) + " - " + nvsTmp.substr(12, 2);
-                    formContext.getAttribute("erineu_cnpj").setValue(nvsTmp);
+                    return (cnpj);
                     break;
 
                 default:
 
-                    alert("O cnpj deve conter 14 numeros Ex. XX.XXX.XXX / 0001 - XX");
+                    return ("O cnpj deve conter 14 numeros Ex. XX.XXX.XXX / 0001 - XX");
                     break;
             }
         }
     },
 
-    FormatCEP: function (executionContext) {
+    /*FormatCEP: function (executionContext) {
         var formContext = executionContext.getFormContext();
         var nvsField = formContext.getAttribute("address1_postalcode").getValue();
         var nvsTmp = nvsField;
@@ -66,5 +67,5 @@ Mascaras.Js = {
                     break;
             }
         }
-    }
+    }*/
 }

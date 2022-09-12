@@ -1,6 +1,3 @@
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\Arbor_Tech.ContosoSA.Conta.csproj.CoreCompileInputs.cache
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.dll
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.pdb
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\HackathonV2_ARBOR_TECH.dll.config
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\HackathonV2_ARBOR_TECH.dll
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\HackathonV2_ARBOR_TECH.pdb
@@ -26,4 +23,7 @@ C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Hackatho
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\System.Text.Json.xml
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\bin\Debug\System.ValueTuple.xml
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\Arbor_Tech.ContosoSA.Conta.csproj.CopyComplete
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\Arbor_Tech.ContosoSA.Contato.csproj.CoreCompileInputs.cache
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.dll
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\HackathonV2_ARBOR_TECH.pdb
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\HackathonV2_ARBOR_TECH\obj\Debug\Arbor_Tech.ContosoSA.Contato.csproj.CopyComplete
