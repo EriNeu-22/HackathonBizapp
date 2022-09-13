@@ -56,4 +56,3 @@ C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Te
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.csproj.CoreCompileInputs.cache
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.dll
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.pdb
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.csproj.CopyComplete

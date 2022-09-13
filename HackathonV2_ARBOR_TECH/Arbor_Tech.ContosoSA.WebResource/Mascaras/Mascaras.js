@@ -3,69 +3,69 @@ Mascaras.Js = {
 
     FormatCNPJ: function (cnpj) {
         "use strict";
-        var nvsTmp = nvsField;
+        var nvsTmp = cnpj;
 
-        if (typeof (cnpj) !== "undefined" && nvsField !== null) {
-            nvsTmp = nvsField.replace(/[^0-15]/g, "");
+        if (typeof (cnpj) !== "undefined" && cnpj !== null) {
+            nvsTmp = cnpj.replace(/[^0-9]/g, "");
 
             switch (nvsTmp.length) {
                 case 14:
 
                     nvsTmp = nvsTmp.substr(0, 2) + "." + nvsTmp.substr(2, 3) + "." + nvsTmp.substr(5, 3) + " / " + nvsTmp.substr(8, 4) + " - " + nvsTmp.substr(12, 2);
-                    return (cnpj);
+                    return (nvsTmp);
                     break;
 
                 default:
 
-                    return ("O cnpj deve conter 14 numeros Ex. XX.XXX.XXX / 0001 - XX");
+                    return ("erro");
                     break;
             }
         }
     },
 
-    /*FormatCEP: function (executionContext) {
-        var formContext = executionContext.getFormContext();
-        var nvsField = formContext.getAttribute("address1_postalcode").getValue();
-        var nvsTmp = nvsField;
+    FormatCEP: function (cep) {
+        "use strict";
 
-        if (typeof (nvsField) != "undefined" && nvsField != null) {
-            nvsTmp = nvsField.replace(/[^0-9]/g, "");
+        var nvsTmp = cep;
+
+        if (typeof (cep) !== "undefined" && cep !== null) {
+            nvsTmp = cep.replace(/[^0-9]/g, "");
 
             switch (nvsTmp.length) {
                 case 8:
 
                     nvsTmp = nvsTmp.substr(0, 5) + "-" + nvsTmp.substr(5, 8);
-                    formContext.getAttribute("address1_postalcode").setValue(nvsTmp);
+                    return (nvsTmp);
                     break;
 
                 default:
 
-                    alert("O cpf deve conter 8 numeros Ex. 00000-00");
+                    return ("erro");
                     break;
             }
         }
     },
 
-    FormatPhoneNo: function (executionContext) {
-        var formContext = executionContext.getFormContext();
-        var nvsField = formContext.getAttribute("mobilephone").getValue();
-        var nvsTmp = nvsField;
+    FormatPhoneNo: function (phone) {
+        "use strict";
 
-        if (typeof (nvsField) != "undefined" && nvsField != null) {
-            nvsTmp = nvsField.replace(/[^0-9]/g, "");
+        var nvsTmp = phone;
+
+        if (typeof (phone) !== "undefined" && phone !== null) {
+            nvsTmp = phone.replace(/[^0-9]/g, "");
 
             switch (nvsTmp.length) {
                 case 11:
 
                     nvsTmp = "(" + nvsTmp.substr(0, 2) + ") " + nvsTmp.substr(2, 5) + "-" + nvsTmp.substr(7, 4);
-                    formContext.getAttribute("mobilephone").setValue(nvsTmp);
+                    return (nvsTmp);
                     break;
 
                 default:
 
-                    alert("O telefone deve conter 11 numeros Ex. (00) 00000 - 0000");
+                    return ("erro");
                     break;
             }
         }
-    }*/
+    }
 }

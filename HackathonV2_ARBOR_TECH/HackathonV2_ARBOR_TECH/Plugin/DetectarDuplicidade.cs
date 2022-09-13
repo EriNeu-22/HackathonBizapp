@@ -22,27 +22,47 @@ namespace HackathonV2_ARBOR_TECH
             var trackingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
             if (context.InputParameters["Target"] is Entity)
             {
-                var contato = (Entity)context.InputParameters["Target"];
-                string email = contato.Attributes.Keys.Contains("emailaddress1") ? ((string)contato["emailaddress1"]) : string.Empty;
-                string telefone = contato.Attributes.Keys.Contains("telephone1") ? ((string)contato["telephone1"]) : string.Empty;
+                var entidade = (Entity)context.InputParameters["Target"];
+                //verificar de onde vem
+                var filter = string.Empty;
+                if (entidade.LogicalName == "accouunt")
+                {
+                    string cnpj = entidade.Attributes.Keys.Contains("arbor_cnpj_conta") ? ((string)entidade["arbor_cnpj_conta"]) : string.Empty;
+                    filter = @"<filter type = 'and' >          
+                                                <filter type = 'or' >           
+                                                    <condition attribute = 'arbor_cnpj_conta' operator= 'eq' value = '" + cnpj + @"' />               
+                                                                      
+                                                </filter >                   
+                                            </filter >";
+
+
+                }
+                else if (entidade.LogicalName == "contact")
+                {
+                    string email = entidade.Attributes.Keys.Contains("emailaddress1") ? ((string)entidade["emailaddress1"]) : string.Empty;
+                    string telefone = entidade.Attributes.Keys.Contains("telephone1") ? ((string)entidade["telephone1"]) : string.Empty;
+
+                    filter = @"<filter type = 'and' >          
+                                                <filter type = 'or' >           
+                                                    <condition attribute = 'emailaddress1' operator= 'eq' value = '" + email + @"' />               
+                                                    <condition attribute = 'telephone1' operator= 'eq' value = '" + telefone + @"' />                   
+                                                </filter >                   
+                                            </filter >";
+                }
+                else
+                    throw new InvalidPluginExecutionException($"ERRO!!!");
+
 
                 string fetch = @"  <fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
-                                        <entity name = 'contact' >   
-                                            <attribute name = 'fullname' />   
-                                            <attribute name = 'telephone1' />     
-                                            <attribute name = 'contactid' />      
-                                            <order attribute = 'fullname' descending = 'false' />         
-                                            <filter type = 'and' >          
-                                                <filter type = 'or' >           
-                                                    <condition attribute = 'emailaddress1' operator= 'eq' value = '"+ email + @"' />               
-                                                    <condition attribute = 'telephone1' operator= 'eq' value = '"+telefone+@"' />                   
-                                                </filter >                   
-                                            </filter >                   
+                                        <entity name = '" + entidade.LogicalName + @"' >
+                                            <attribute name = '" + entidade.LogicalName + "id" + @"fullname' />
+                                                "+ filter +@"                                                               
                                         </entity >
-                                    </fetch >  ";
+                                    </fetch >  ";              
 
-                    var retorno = service.RetrieveMultiple(new FetchExpression(fetch));
+                
 
+                var retorno = service.RetrieveMultiple(new FetchExpression(fetch));
                 if (retorno?.Entities.Count > 0) 
                 {
                     throw new InvalidPluginExecutionException($"Já existe um contato com o Email: {email} ou com o Telefone: {telefone}");
