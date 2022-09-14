@@ -71,6 +71,7 @@
     <Content Include="Entidades\Contato.js" />
     <Content Include="Entidades\Conta.js" />
     <Content Include="Mascaras\Mascaras.js" />
+    <Content Include="ViaCep\ViaCep.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
