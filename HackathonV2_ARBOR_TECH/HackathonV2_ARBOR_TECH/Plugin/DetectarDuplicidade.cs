@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HackathonV2_ARBOR_TECH
 {
-    public class OnCerate_Contato_DetectarDuplicidade : IPlugin
+    public class OnCerate_Contato_Conta_DetectarDuplicidade : IPlugin
 
     {
         public void Execute(IServiceProvider serviceProvider)
@@ -23,9 +23,8 @@ namespace HackathonV2_ARBOR_TECH
             if (context.InputParameters["Target"] is Entity)
             {
                 var entidade = (Entity)context.InputParameters["Target"];
-                //verificar de onde vem
                 var filter = string.Empty;
-                if (entidade.LogicalName == "accouunt")
+                if (entidade.LogicalName == "account")
                 {
                     string cnpj = entidade.Attributes.Keys.Contains("arbor_cnpj_conta") ? ((string)entidade["arbor_cnpj_conta"]) : string.Empty;
                     filter = @"<filter type = 'and' >          
@@ -55,17 +54,16 @@ namespace HackathonV2_ARBOR_TECH
 
                 string fetch = @"  <fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
                                         <entity name = '" + entidade.LogicalName + @"' >
-                                            <attribute name = '" + entidade.LogicalName + "id" + @"fullname' />
-                                                "+ filter +@"                                                               
+                                            "+ filter +@"                                                               
                                         </entity >
-                                    </fetch >  ";              
+                                    </fetch >  ";               
 
                 
 
                 var retorno = service.RetrieveMultiple(new FetchExpression(fetch));
                 if (retorno?.Entities.Count > 0) 
                 {
-                    throw new InvalidPluginExecutionException($"Já existe um contato com o Email: {email} ou com o Telefone: {telefone}");
+                    throw new InvalidPluginExecutionException($"Os dados informados já foram cadastrados no sistema");
                 }
             }
         }

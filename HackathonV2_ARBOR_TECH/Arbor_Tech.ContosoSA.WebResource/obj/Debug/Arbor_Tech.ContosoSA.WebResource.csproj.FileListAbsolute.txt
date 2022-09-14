@@ -52,7 +52,7 @@ C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Te
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.csproj.AssemblyReference.cache
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.csproj.CoreCompileInputs.cache
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.dll
 C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.pdb
+C:\Users\ErichNeumann\workspace\Hackathon Bizapp\HackathonV2_ARBOR_TECH\Arbor_Tech.ContosoSA.WebResource\obj\Debug\Arbor_Tech.ContosoSA.WebResource.csproj.CopyComplete
